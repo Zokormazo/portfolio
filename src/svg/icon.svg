@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<circle
+   r="45"
+   cy="50"
+   cx="50"
+   style="fill:none;stroke:#106a87;stroke-opacity:1;stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none" />
+  <line
+   x1="25"
+   y1="70"
+   x2="75"
+   y2="70"
+   style="stroke:#106a87;stroke-width:8;" />
+  <line
+   x1="35"
+   y1="80"
+   x2="65"
+   y2="80"
+   style="stroke:#db6d00;stroke-width:8;" />
+  <rect
+   x="32"
+   y="48"
+   height="15"
+   width="10"
+   style="fill:#db6d00;" />
+<rect
+   x="45"
+   y="28"
+   height="35"
+   width="10"
+   style="fill:#106a87" />
+<rect
+   x="58"
+   y="38"
+   height="25"
+   width="10"
+   fill="#16106135"
+   style="fill:#106a87" />
+</svg>

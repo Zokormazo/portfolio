@@ -1,0 +1,167 @@
+extends extends/layout.pug
+include mixins/section.pug
+
+block content
+  +section('frontend')
+    -
+      var skillList = [
+        {
+          img: 'images/logos/html5.svg',
+          alt: 'HTML5 Logo',
+          text: 'HTML5'
+        },
+        {
+          img: 'images/logos/css3.svg',
+          alt: 'CSS3 Logo',
+          text: 'CSS3'
+        },
+        {
+          img: 'images/logos/javascript.svg',
+          alt: 'JavaScript Logo',
+          text: 'JavaScript'
+        },
+        {
+          img: 'images/logos/jquery.svg',
+          alt: 'JQuery Logo',
+          text: 'JQuery'
+        },
+        {
+          img: 'images/logos/sass.svg',
+          alt: 'Sass Logo',
+          text: 'Sass'
+        },
+        {
+          img: 'images/logos/pug.svg',
+          alt: 'pug Logo',
+          text: 'Pug'
+        },
+        {
+          img: 'images/logos/angular.svg',
+          alt: 'Angular Logo',
+          text: 'Angular'
+        },
+        {
+          img: 'images/logos/grunt.svg',
+          alt: 'Grunt Logo',
+          text: 'Grunt'
+        }
+      ];
+    h4 Frontend
+    div(class='text')
+      p
+        | I love writing websites. After many years coding them with different
+        | technologies, I learn to appreciate <strong>fast</strong>,
+        | <strong>optimized</strong> and <strong>clean code</strong>, and that
+        | the kind of code I write.
+      p
+        | From plain <strong>HTML</strong>, <strong>CSS</strong> and
+        | <strong>javascript</strong> websites to complex framework single page
+        | apps, I use to write <strong>easy to maintain</strong>, well
+        | integrated, <strong>optimized</strong> and <strong>responsive</strong>
+        | websites that works well on any device.
+    ul(class='skill-list')
+      for skill in skillList
+        li
+          img(src=skill.img alt=skill.alt)
+          span= skill.text
+    nav(class='section-navigation')
+      a(href='#backend' class='scroll-next')
+        i(class='fa fa-chevron-down')
+  +section('backend')
+    -
+      var skillList = [
+        {
+          img: 'images/logos/python.svg',
+          alt: 'Python Logo',
+          text: 'Python'
+        },{
+          img: 'images/logos/flask.svg',
+          alt: 'Flask Logo',
+          text: 'Flask'
+        },{
+          img: 'images/logos/django.svg',
+          alt: 'Django Logo',
+          text: 'Django'
+        },{
+          img: 'images/logos/nodejs.svg',
+          alt: 'NodeJS Logo',
+          text: 'NodeJS'
+        },{
+          img: 'images/logos/php.svg',
+          alt: 'PHP Logo',
+          text: 'PHP'
+        }
+      ];
+    h4 Backend
+    div(class='text')
+      p
+        | I started making websites with <strong>Perl</strong> many years ago,
+        | continued with <strong>PHP</strong> and nowadays I'm able to code
+        | MVC platforms to REST APIs using the latest technologies.
+      p
+        | With <strong>security</strong> and <strong>scalability</strong> in
+        | mind I try choosing the technological stack that fits best with the
+        | project.
+      p
+        | I like new challenges and I'm always ready for them and my kwownledge
+        | on both ends coding makes me a <strong>cooperative team worker
+        | </strong>.
+
+    ul(class='skill-list')
+      for skill in skillList
+        li
+          img(src=skill.img alt=skill.alt)
+          span= skill.text
+    nav(class='section-navigation')
+      a(href='#others' class='scroll-next')
+        i(class='fa fa-chevron-down')
+  +section('deployment')
+    -
+      var skillList = [
+        {
+          img: 'images/logos/linux.svg',
+          alt: 'Linux Logo',
+          text: 'Linux'
+        },{
+          img: 'images/logos/debian.svg',
+          alt: 'Debian Logo',
+          text: 'Debian'
+        },{
+          img: 'images/logos/nginx.svg',
+          alt: 'Nginx Logo',
+          text: 'Nginx'
+        },{
+          img: 'images/logos/lighttpd.svg',
+          alt: 'Lighttpd Logo',
+          text: 'Lighttpd'
+        },{
+          img: 'images/logos/apache.svg',
+          alt: 'Apache Logo',
+          text: 'Apache'
+        }
+      ];
+    h4 Deployment
+    div(class='text')
+      p
+        | A successfull web platform needs a good deployment. Almost twenty
+        | years using <strong>GNU/Linux</strong> daily on both server and
+        | desktop machines gives me full comprehensive of the overall deployment
+        | process.
+
+      p
+        | I like to deploy my own projects and control them. From static files
+        | to reverse proxies, using apache, lighttpd or nginx and all the
+        | other stack technologies for both testing and production environments.
+
+      p
+        | I feel confortable with almost any distribution, althrought I prefer
+        | using <strong>Debian</strong> on my production environments.
+
+    ul(class='skill-list')
+      for skill in skillList
+        li
+          img(src=skill.img alt=skill.alt)
+          span= skill.text
+    nav(class='section-navigation')
+      a(href='#frontend' class='scroll-home')
+        i(class='fa fa-chevron-up')

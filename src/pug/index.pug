@@ -1,0 +1,17 @@
+extends extends/layout.pug
+include mixins/section.pug
+
+block content
+  +section('welcome')
+    figure
+      img(src='images/photo.png' alt="Julen Landa Alustiza's photo")
+    div(class="text")
+      p
+        | Hi! My name is Julen Landa Alustiza, and I'm a <strong>free
+        | software</strong>, <strong>new techonologies</strong> and
+        | <strong>full stack web development</strong> enthusiast from
+        | Gipuzkoa, Basque Country.
+      p
+        | After some years working on an unrelated business doing boring and
+        | repetitive administrative tasks I decided to start a career on a
+        | business I like.

@@ -1,0 +1,19 @@
+.cookie-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $reverse-bg-color;
+  color: $reverse-color;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  p {
+    float: left;
+  }
+
+  #cookie-bar-ok {
+    float: right;
+    cursor: pointer;
+  }
+}

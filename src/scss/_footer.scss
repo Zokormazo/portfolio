@@ -1,0 +1,74 @@
+footer {
+  display: block;
+  width: 100%;
+  background: $footer-background-color;
+  color: $footer-color;
+  text-align: center;
+
+  .external-links {
+    display: block;
+    li {
+      display: inline-block;
+      margin: {
+        top: 15px;
+        right: 10px;
+        bottom: 5px;
+      }
+      a {
+        color: $footer-color;
+        font-size: 32px;
+        transition: 0.3s;
+        text: {
+          shadow: 0 0 0 rgba(0,0,0,0);
+        }
+
+        &:hover {
+          text: {
+            shadow: 0 0 2px $footer-hover-shadow-color;
+          }
+          color: $footer-hover-color;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .boring-links {
+    a {
+      color: $reverse-color;
+
+      font: {
+        size: 14px;
+      }
+    }
+  }
+
+  &.reverse {
+    background: $footer-reverse-background-color;
+    color: $footer-reverse-color;
+
+    .external-links {
+      li {
+        a {
+          color: $footer-reverse-color;
+
+          &:hover {
+            text: {
+              shadow: 0 0 2px $footer-hover-shadow-color;
+            }
+            color: $footer-hover-color;
+          }
+        }
+      }
+    }
+
+    .boring-links {
+      a {
+        color: $footer-reverse-color;
+      }
+    }
+  }
+}

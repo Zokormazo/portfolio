@@ -1,0 +1,33 @@
+// Internal Links
+-
+  var internalLinks = [
+    {
+      href:'/',
+      text:'Home',
+      url:'/'
+    },{
+      href:'/skills.html',
+      text:'Skills',
+      url:'/skills'
+    },{
+      href:'/contact.html',
+      text:'Contact',
+      url:'/contact'
+    }
+  ];
+
+//Site Header block
+header
+  .container
+    include ../../svg/logo.svg
+    h1 Julen Landa Alustiza
+    h2 Portfolio
+    span(class='toggle-navigation')
+      i(class='fa fa-bars')
+      span(class='sr-only') Toggle navigation menu
+    nav(class='persistent-navigation')
+      ul(class='internal-links')
+        for link in internalLinks
+          li
+            a(class={active: url === link.url} href=link.href)= link.text
+        include external-links.pug

@@ -1,0 +1,68 @@
+extends extends/layout.pug
+include mixins/section.pug
+
+block content
+  +section('license')
+    h4 License
+    div(class='text')
+      p
+        | The website code is free software licensed under
+        | <a href="https://opensource.org/licenses/MIT" target="_blank">MIT</a>
+        | license.
+      p
+        | My photograph, located on /img/photo.png is licensed under
+        | <a href="https://creativecommons.org/licenses/by/4.0/"
+        | target="_blank">Creative Commons Attribution 4.0</a>
+        | license.
+      p
+        | The HTML5 and CSS3 are from <a href="https://www.w3.org/"
+        | target="_blank">W3C</a> and licensed under
+        | <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">
+        | Creative Commons Attribution 3.0</a> license.
+      p
+        | The Angular logo is from <a href="https://angular.io" target="_blank">
+        | angular.io</a> and licensed under <a
+        | href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+        | Creative Commons Attribution 4.0</a> license.
+      p
+        | The jQuery logo is from <a href="https://jquery.com/" target="_blank">
+        | jQuery.com</a> and licensed under <a
+        | href="https://js.foundation/trademark/" target="_blank">JS Foundation
+        | trademark</a> policy.
+      p
+        | The Sass logo is from <a href="http://sass-lang.com/" target="_blank">
+        | sass-lang.com</a> and licensed under <a
+        | href="https://creativecommons.org/licenses/by-nc-sa/3.0/"
+        | target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike
+        | 3.0 Unported</a> license.
+      p
+        | The pug logo is from <a href="https://pugjs.org" target="_blank">
+        | pugjs.org</a> and licensed under <a
+        | href="https://opensource.org/licenses/MIT" target="_blank">MIT
+        | License</a>.
+      p
+        | The grunt logo is from <a href="http://gruntjs.com" target="_blank">
+        | gruntjs.com</a> and is licensed under
+        | <a href="https://opensource.org/licenses/MIT" target="_blank">MIT
+        | License</a>.
+      p
+        | The Python logo is from <a href="https://www.python.org"
+        | target="_blank">python.org</a> and is licensed under <a
+        | href="https://www.python.org/psf/trademarks/" target="_blank">PSF
+        | Trademark Usage Policy</a>.
+      p
+        | The Flask logo is from <a href="http://flask.pocoo.org/"
+        | target="_blank">flask.pocoo.org</a> and is licensed under <a
+        | href="http://flask.pocoo.org/docs/0.11/license/#flask-artwork-license"
+        | target="_blank">Flask Artwork License</a>.
+    nav(class='section-navigation')
+      a(href='#cookies' class='scroll-next')
+        i(class='fa fa-chevron-down')
+  +section('cookies')
+    h4 Cookies
+    div(class='text')
+      p
+        | Blablabla
+    nav(class='section-navigation')
+      a(href='#license' class='scroll-home')
+        i(class='fa fa-chevron-up')

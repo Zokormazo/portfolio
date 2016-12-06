@@ -1,0 +1,140 @@
+/*
+ * Color palette
+ */
+$primary-color: #313131; // Primary color, used for main text color.
+$primary-bg-color: #fff; // Primary background color, used for main background color.
+$secondary-color: lighten($primary-color, 20%); // Secondary color, used for secondary text color.
+$highlight-color: #1ab1e3; // Highlight color, used for highlighted items color.
+$shadow-color: rgba(0,0,0,.31); // Shadow color, used for shadows.
+$reverse-color: $primary-bg-color; // Reverse color, used for alternative main text.
+$reverse-secondary-color: darken($reverse-color, 20%); // Reverse secondary color, used for alternative secondary text;
+$reverse-bg-color: $primary-color; // Reverse background color, used for alternative main background color.
+$reverse-shadow-color: rgba(255, 255, 255, .31); // Reverse shadows, used for alternative shadows;
+$reverse-strong-color: $highlight-color;
+
+/*
+ * Fonts
+ */
+$primary-font-family: 'Lato', sans-serif; // Primary font family, used as default family.
+
+/*
+ * Sizes
+*/
+$container-max-width: 1000px; // Container max width
+$responsive-tablet-width: 768px; // Responsive tablet min limit
+$responsive-laptop-width: 992px; // Responsive laptop min limit
+$responsive-desktop-width: 1200px; // Responsive desktop min limit
+
+/*
+ * Body settings
+ */
+$body-color: $primary-color;
+$body-bg-color: $primary-bg-color;
+$body-font-family: $primary-font-family;
+
+/*
+ * Anchor settings
+ */
+// Default
+$anchor-color: darken($highlight-color,20%);
+$anchor-weight: 700;
+$anchor-text-decoration: underline;
+// Hover
+$anchor-hover-color: lighten($anchor-color,10%);
+$anchor-hover-weight: $anchor-weight;
+$anchor-hover-text-decoration: $anchor-text-decoration;
+
+/*
+ * Strong settings
+ */
+$strong-color: darken($highlight-color, 20%);
+
+/*
+ * Header settings
+ */
+// Default
+$header-z-index: 100;
+$header-brand-color: darken($highlight-color,20%);
+$header-h2-color: $secondary-color;
+// Tablet default
+$header-tablet-bg-color: $primary-bg-color;
+$header-tablet-border-color: transparent;
+// Tablet alternative
+$header-tablet-alternative-border-color: $secondary-color;
+$header-tablet-alternative-shadow-color: $shadow-color;
+$header-tablet-alternative-reverse-shadow-color: $reverse-shadow-color;
+
+/*
+ * Toggle navigation button
+*/
+// Default
+$toggle-navigation-color: darken($highlight-color,20%);
+$toggle-navigation-z-index: 9999;
+// Active
+$toggle-navigation-active-color: $highlight-color;
+
+/*
+ * Persistent navigation settings
+*/
+$persistent-navigation-z-index: 101;
+
+// Default
+$persistent-navigation-color: $primary-color;
+$persistent-navigation-bg-color: darken($primary-bg-color,10%);
+$persistent-navigation-width: 300px;
+$persistent-navigation-border-left: 1;
+$persistent-navigation-shadow: -4px 0 10px 0 $shadow-color;
+$persistent-navigation-padding-top: 100px;
+$persistent-navigation-anchor-color: $secondary-color;
+$persistent-navigation-anchor-active-color: darken($highlight-color,10%);
+$persistent-navigation-anchor-active-shadow-color: $shadow-color;
+$persistent-navigation-anchor-hover-color: $highlight-color;
+$persistent-navigation-anchor-hover-shadow-color: $shadow-color;
+$persistent-navigation-external-link-color: $secondary-color;
+$persistent-navigation-external-link-hover-color: darken($highlight-color,10%);
+$persistent-navigation-external-link-hover-shadow-color: $shadow-color;
+
+/*
+ * Footer settings
+ */
+$footer-background-color: $reverse-bg-color;
+$footer-color: $reverse-color;
+$footer-hover-color: $highlight-color;
+$footer-hover-shadow-color: $reverse-shadow-color;
+$footer-reverse-color: $primary-color;
+$footer-reverse-background-color: $primary-bg-color;
+
+/*
+ * Section settings
+*/
+$section-section-navigation-color: darken($highlight-color,20%);
+$section-section-navigation-shadow-color: $shadow-color;
+$section-section-navigation-hover-color: $highlight-color;
+$section-section-navigation-hover-shadow-color: $highlight-color;
+$section-odd-color: $primary-bg-color;
+$section-odd-bg-color: $primary-color;
+$section-odd-h4-color: $reverse-secondary-color;
+/*
+ * Index section
+ */
+$index-figure-border-color: darken($highlight-color, 20%);
+$index-figure-border-shadow-color: $shadow-color;
+
+/*
+ * Skills section
+ */
+$skills-skill-list-text-color: $secondary-color;
+
+/*
+ * Contact section
+ */
+$contact-button-bg-color: darken($highlight-color, 30%);
+$contact-button-color: $reverse-color;
+$contact-button-hover-bg-color: lighten($contact-button-bg-color, 10%);
+$contact-button-hover-color: lighten($contact-button-color, 5%);
+
+/*
+ * Logo
+ */
+$logo-color: darken($highlight-color, 20%);
+$logo-highlight-color: #db6d00;

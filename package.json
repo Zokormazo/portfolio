@@ -1,0 +1,38 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "grunt"
+  },
+  "description": "Julen Landa Alustiza's portfolio website",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "julen@develbox.intranet.zokormazo.info:git/projects/portfolio.git"
+  },
+  "author": "Julen Landa Alustiza",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-htmlmin": "^2.0.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-pug": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-express": "^1.4.1",
+    "grunt-open": "^0.2.3",
+    "grunt-parallel": "^0.5.1",
+    "grunt-sass": "^1.2.1",
+    "grunt-text-replace": "^0.4.0",
+    "jquery": "^3.1.1",
+    "jquery-scrollify": "^1.0.7",
+    "normalize.css": "^5.0.0"
+  },
+  "dependencies": {
+    "js-cookie": "^2.1.3"
+  }
+}

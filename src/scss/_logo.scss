@@ -1,0 +1,81 @@
+.logo {
+  display: inline-block;
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  .circle {
+    fill: none;
+    stroke: $logo-color;
+    stroke-width: 8;
+  }
+  .horizontal-top {
+    stroke: $logo-color;
+    stroke-width: 8;
+  }
+  .horizontal-bottom {
+    stroke: $logo-highlight-color;
+    stroke-width: 8;
+  }
+  .vertical-left {
+    fill: $logo-highlight-color;
+    transform-origin: center bottom;
+    transform: scale(1,1.5);
+    transition-duration: 0.5s;
+  }
+  .vertical-middle {
+    fill: $logo-color;
+    transform-origin: center bottom;
+    transform: scale(1,3.5);
+    transition-duration: 0.5s;
+  }
+  .vertical-right {
+    fill: $logo-color;
+    transform-origin: center bottom;
+    transform: scale(1,2);
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+  }
+
+  @media (min-width: $responsive-tablet-width) {
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    margin-right: 5px;
+    transition: 1.1s;
+
+    &.alt-1 {
+      transform: rotate(-30deg);
+      .vertical-left {
+        transform: scale(1,2.5);
+        fill: $logo-color;
+      }
+      .vertical-middle {
+        transform: scale(1,1.5);
+      }
+      .vertical-right {
+        transform: scale(1,3.5);
+        fill: $logo-highlight-color;
+      }
+    }
+
+    &.alt-2 {
+      transform: rotate(0deg);
+    }
+
+    &.alt-3 {
+      transform: rotate(30deg);
+      .vertical-left {
+        transform: scale(1,1.5);
+        fill: $logo-color;
+      }
+      .vertical-middle {
+        transform: scale(1, 2.5);
+        fill: $logo-highlight-color;
+      }
+      .vertical-right {
+        transform: scale(1, 3.5);
+      }
+    }
+  }
+}

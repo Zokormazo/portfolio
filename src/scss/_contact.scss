@@ -1,0 +1,28 @@
+section.contact {
+
+  p {
+    text-align: center;
+    font-size: 24px;
+  }
+  a {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    text: {
+      transform: uppercase;
+      align: center;
+      decoration: none;
+    }
+    margin-bottom: 10px;
+    color: $contact-button-color;
+    padding: 5px 20px 5px 20px;
+    background-color: $contact-button-bg-color;
+    border-style: none;
+    @include border-radius(4px);
+
+    &:hover {
+      color: $contact-button-hover-color;
+      background-color: $contact-button-hover-bg-color;
+    }
+  }
+}

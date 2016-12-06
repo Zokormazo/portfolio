@@ -1,0 +1,61 @@
+
+ul.skill-list {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    } // &:last-child
+
+    img {
+      width: 30px;
+      height: 30px;
+    } // img
+
+    span {
+      display: block;
+      font-size: 14px;
+      font-weight: 900;
+      text-align: center;
+      color: $skills-skill-list-text-color;
+      width: 100%;
+
+      section:nth-child(odd) & {
+        color: $reverse-secondary-color;
+      }
+    } // span
+  } // li
+
+  @media (min-width: $responsive-tablet-width) {
+    li {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  @media (min-width: $responsive-laptop-width) {
+    li {
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  @media (min-width: $responsive-desktop-width) {
+    li {
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+} // ul.skill-list

@@ -1,0 +1,52 @@
+// Icon <link>
+mixin link-icon(size)
+  link(rel='icon', type='image/png', sizes=size, href='icons/' + size + '.png')
+
+// Apple Touch Icon <link>
+mixin link-apple-touch-icon(size)
+  link(rel='apple-touch-icon', sizes=size, href='icons/' + size + '.png')
+
+// <head> block
+head
+  -
+    var siteName = 'Julen Landa Alustiza\'s portfolio - Full Stack Developer'
+    var completeUrl = 'https://www.julenlanda.com' + url;
+    var completeTitle = siteName + ' - ' + title;
+  // Title
+  title=completeTitle
+  // Main meta tags
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(charset='UTF-8')
+  meta(name='description' content=description)
+  meta(name='keywords' content=keywords)
+  meta(name='author' content='Julen Landa Alustiza')
+  link(rel='canonical' content=completeUrl)
+  // Open Graph Protocol
+  meta(property='og:title' content=completeTitle)
+  meta(property='og:description' content=description)
+  meta(property='og:site_name' content=siteName)
+  meta(property='og:type' content=ogType)
+  meta(property='og:url' content=completeUrl)
+  meta(property='og:image' content=image)
+  // Twitter card
+  meta(name='twitter:card' content='summary')
+  meta(name='twitter:site' content='@JulenLanda')
+  meta(name='twitter:title' content=completeTitle)
+  meta(name='twitter:description' content=description)
+  meta(name='twitter:image' content=image)
+  // Icons
+  +link-icon('192x192')
+  +link-icon('96x96')
+  +link-icon('32x32')
+  +link-icon('16x16')
+  // Apple Touch Icons
+  +link-apple-touch-icon('180x180')
+  +link-apple-touch-icon('167x167')
+  +link-apple-touch-icon('152x152')
+  +link-apple-touch-icon('120x120')
+  // Microsoft Windows Tiles
+  // Stylesheets
+  link(rel='stylesheet', href='https://use.fontawesome.com/1b1140c6da.css')
+  link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato:400,700,900')
+  link(rel='stylesheet', href='normalize.css')
+  link(rel='stylesheet', href='css/portfolio.min.css')

@@ -1,0 +1,9 @@
+// External Links
+- var externalLinks = [{href:'https://github.com/Zokormazo',icon:'github',srOnly:'Github profile'},{href:'https://www.linkedin.com/in/julen-landa-alustiza-51aa27128',icon:'linkedin',srOnly:'LinkedIn profile'}];
+
+ul(class='external-links')
+  for link in externalLinks
+    li
+      a(href=link.href target='_blank')
+        i(class='fa fa-' + link.icon)
+        span(class='sr-only')=link.srOnly
