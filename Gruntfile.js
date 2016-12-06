@@ -150,6 +150,9 @@ module.exports = function(grunt) {
           from: 'jquery.scrollify.min.js',
           to: 'https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.7/jquery.scrollify.min.js'
         },{
+          from: 'js.cookie.js',
+          to: 'https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.3/js.cookie.min.js'
+        },{
           from: '/skills.html',
           to: '/skills'
         },{
