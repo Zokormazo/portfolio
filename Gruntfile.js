@@ -109,6 +109,11 @@ module.exports = function(grunt) {
             dest: 'dist/images/'
           },{
             expand: true,
+            cwd: 'src/icons',
+            src: '**',
+            dest: 'dist/icons/'
+          },{
+            expand: true,
             cwd: 'src',
             src: 'robots.txt',
             dest: 'dist/'
@@ -127,6 +132,11 @@ module.exports = function(grunt) {
             cwd: 'src/images',
             src: '**',
             dest: 'production/images/'
+          },{
+            expand: true,
+            cwd: 'src/icons',
+            src: '**',
+            dest: 'production/icons/'
           },{
             expand: true,
             cwd: 'src',
