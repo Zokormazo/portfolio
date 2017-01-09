@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="logo">
-  <circle r="45" cy="50" cx="50" class="circle"/>
-  <line x1="25" y1="70" x2="75" y2="70" class="horizontal-top"/>
-  <line x1="35" y1="80" x2="65" y2="80" class="horizontal-bottom"/>
-  <rect x="32" y="53" height="10" width="10" class="vertical-left"/>
-  <rect x="45" y="53" height="10" width="10" class="vertical-middle"/>
-  <rect x="58" y="53" height="10" width="10" class="vertical-right"/>
-</svg>
