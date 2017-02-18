@@ -17,7 +17,28 @@
     stroke: $logo-highlight-color;
     stroke-width: 8;
   }
+
   .vertical-left {
+    stroke: $logo-highlight-color;
+    stroke-width: 10;
+    transform: scale(1, 1.5);
+    transition-duration: 0.5s;
+  }
+
+  .vertical-middle {
+    stroke: $logo-color;
+    stroke-width: 10;
+    transform: scale(1, 3.5) translate(0, -3px);
+    transition-duration: 0.5s;
+  }
+
+  .vertical-right {
+    stroke: $logo-color;
+    stroke-width: 10;
+    transform: scale(1,2) translate(0, -1.5px);
+    transition-duration: 0.5s;
+  }
+  /*.vertical-left {
     fill: $logo-highlight-color;
     transform-origin: center bottom;
     transform: scale(1,1.5);
@@ -35,7 +56,7 @@
     transform: scale(1,2);
     transition-duration: 0.5s;
     transition-delay: 0.2s;
-  }
+  }*/
 
   @media (min-width: $responsive-tablet-width) {
     height: 40px;
@@ -47,14 +68,14 @@
     &.alt-1 {
       transform: rotate(-30deg);
       .vertical-left {
-        transform: scale(1,2.5);
+        transform: scale(1,2.5) translate(0,-2px);
         fill: $logo-color;
       }
       .vertical-middle {
         transform: scale(1,1.5);
       }
       .vertical-right {
-        transform: scale(1,3.5);
+        transform: scale(1,3.5) translate(0, -3px);
         fill: $logo-highlight-color;
       }
     }
@@ -70,11 +91,11 @@
         fill: $logo-color;
       }
       .vertical-middle {
-        transform: scale(1, 2.5);
+        transform: scale(1, 2.5) translate(0, -2px);
         fill: $logo-highlight-color;
       }
       .vertical-right {
-        transform: scale(1, 3.5);
+        transform: scale(1, 3.5) translate(0, -3px);
       }
     }
   }
