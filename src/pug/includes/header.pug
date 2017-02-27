@@ -30,4 +30,6 @@ header
         for link in internalLinks
           li
             a(class={active: url === link.url} href=link.href)= link.text
+        li
+          a(target="_blank" href="https://blog.julenlanda.com") Blog
         include external-links.pug
